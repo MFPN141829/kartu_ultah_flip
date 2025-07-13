@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <audio id="background-music" loop autoplay>
+        <source src="musik_ultah.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="flip-sound">
+        <source src="flip.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div id="intro-screen" class="screen active">
+        <div class="qr-scanner-overlay">
+            <div class="scanner-line"></div>
+            <p>Pindai Kode untuk Membuka...</p>
+            <div class="qr-placeholder">QR</div>
+            <button id="start-button">Mulai</button>
+        </div>
+    </div>
+
+    <div id="card-screen" class="screen">
+        <div class="card-container">
+            <div class="card" id="birthday-card">
+                <div class="card-front">
+                    <div id="countdown">3</div>
+                    <div id="birthday-text" class="hidden"></div>
+                    <img id="cat-image" src="kucing_ultah.png" alt="Kucing Ulang Tahun" class="hidden" />
+                    <p class="tap-hint">Ketuk untuk membuka!</p>
+                </div>
+                <div class="card-back">
+                    <img src="pesan_kartu.png" alt="Pesan Kartu" class="message-image" />
+                    <p class="small-text">Terima kasih telah hadir dalam hidupku!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
